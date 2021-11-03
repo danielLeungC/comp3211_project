@@ -21,6 +21,7 @@ public class Controller {
     public Controller(Display display, Square[] squares, Player[] players) {
         this.display = display;
         this.squaresList = squares;
+        playersList = new ArrayList<Player>();
         for (Player player : players) {
             playersList.add(player);
         }
