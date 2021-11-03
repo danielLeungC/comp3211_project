@@ -54,6 +54,9 @@ public class Player {
             throw new IllegalArgumentException("Invalid position, the position must be positive!");
         }
         playerPosition = Math.floorMod(nextPosition, 20);
+        if (playerPosition > 19) {
+            playerPosition = playerPosition - 19;
+        }
     }
 
     public int getPlayerPosition() {
