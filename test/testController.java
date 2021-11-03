@@ -36,7 +36,13 @@ public class testController {
     }
 
     @Test
-    public void temp(){
-
+    public void testJail(){
+        players[0].setPlayerPosition(5);
+        assertEquals(5,players[0].getPlayerPosition());
+        players[0].setStatus("jail");
+        assertEquals("jail",players[0].getStatus());
     }
+
+    
+
 }
