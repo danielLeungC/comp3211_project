@@ -27,6 +27,66 @@ public class Controller {
         turns = 0;
     }
 
+    public Display getDisplay() {
+        return display;
+    }
+
+    public void setDisplay(Display display) {
+        this.display = display;
+    }
+
+    public Square[] getSquaresList() {
+        return squaresList;
+    }
+
+    public void setSquaresList(Square[] squaresList) {
+        this.squaresList = squaresList;
+    }
+
+    public void setPlayersList(ArrayList<Player> playersList) {
+        this.playersList = playersList;
+    }
+
+    public ArrayList<Player> getRetireList() {
+        return retireList;
+    }
+
+    public void setRetireList(ArrayList<Player> retireList) {
+        this.retireList = retireList;
+    }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public int getTurns() {
+        return turns;
+    }
+
+    public void setTurns(int turns) {
+        this.turns = turns;
+    }
+
+    public String getUserInput() {
+        return userInput;
+    }
+
+    public void setUserInput(String userInput) {
+        this.userInput = userInput;
+    }
+
     public void play() {
         /*
          * Flow:
@@ -356,7 +416,7 @@ public class Controller {
         display.displayWinMsg(winMessage);
     }
 
-    public void addPlayersToList(Player player){
-        playersList.add(player);
+    public ArrayList<Player> getPlayersList(){
+        return playersList;
     }
 }
